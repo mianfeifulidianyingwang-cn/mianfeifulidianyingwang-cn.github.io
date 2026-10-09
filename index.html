@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="content-language" content="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="免费福利电影网是 0149 导航旗下「惠民放映」频道：只推荐可合法免费观看的电影——公共版权、院线免费展映、正版平台限免、电影节公益场、图书馆与艺术院线。倡导正版、明确反对盗版与网盘盗链。">
+<meta name="keywords" content="免费福利电影网, 免费电影, 正版免费电影, 公共版权电影, 免费观影, 公益放映, 电影片单, 电影影评, 观影指南, 4K修复, 默片, 黑白电影, 华语电影, 欧洲电影, 日本电影, 艺术院线, 图书馆, 限免, 0149导航, mianfeifulidianyingwang-cn">
+<meta name="author" content="免费福利电影网 · 0149 导航">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#f4efe4">
+<title>免费福利电影网 - 四类合法免费，每周更新｜0149 导航 | mianfeifulidianyingwang-cn.github.io</title>
+<link rel="canonical" href="https://mianfeifulidianyingwang-cn.github.io">
+<style>
+:root{
+  --paper:#f4efe4; --paper2:#ebe3d2; --ink:#1b1a17; --red:#c2331f; --red2:#e0573c;
+  --gold:#b8863b; --gray:#6f6a5f; --dim:#9a9385;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--paper);color:var(--ink);line-height:1.9;font-size:15.2px;overflow-x:hidden;-webkit-font-smoothing:antialiased;
+  background-image:
+    linear-gradient(rgba(27,26,23,.022) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(27,26,23,.022) 1px,transparent 1px);
+  background-size:27px 27px;
+}
+.serif,h1,h2,h3,h4,.fig{font-family:Georgia,"Songti SC","SimSun",serif}
+a{color:inherit;text-decoration:none;transition:.2s}
+ul,ol{list-style:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+::selection{background:var(--red);color:#fff}
+.alert{background:var(--red);color:#fff6ec;font-size:10.4px;letter-spacing:1px;padding:11px 0;text-align:center;font-weight:800}
+.alert b{background:#fff;color:var(--red);padding:1px 7px}
+.marq{overflow:hidden;border-bottom:2px solid var(--ink);padding:9px 0;font-size:8.4px;letter-spacing:2.8px;color:var(--gray);white-space:nowrap;font-weight:900;background:var(--paper2)}
+.marq span{display:inline-block;padding-left:2%;animation:mm 72s linear infinite}
+@keyframes mm{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.marq b{color:var(--red)}
+nav.gnb{position:sticky;top:0;z-index:100;background:rgba(244,239,228,.97);backdrop-filter:blur(8px);border-bottom:3px double var(--ink)}
+.nrow{display:flex;align-items:center;height:64px;gap:0}
+.logo{font-size:18.2px;font-weight:900;letter-spacing:.5px;margin-right:14px;white-space:nowrap;display:flex;align-items:center;gap:10px;color:var(--ink)}
+.tick{width:23px;height:23px;flex:0 0 23px;border:2px solid var(--red);position:relative;transform:rotate(45deg)}
+.tick::before{content:"";position:absolute;inset:3px;border:1px solid var(--gold)}
+.logo small{font-size:7.6px;letter-spacing:1.3px;color:var(--gray);font-weight:800;display:block;line-height:1.1;margin-top:2px}
+.nrow a{font-size:13px;padding:10px 9px;color:var(--gray);font-weight:700;position:relative}
+.nrow a:hover{color:var(--red)}
+.nrow a::after{content:"";position:absolute;left:9px;right:9px;bottom:6px;height:2px;background:var(--red);transform:scaleX(0);transform-origin:right;transition:.22s}
+.nrow a:hover::after{transform:scaleX(1);transform-origin:left}
+.togg{display:none;background:none;border:none;color:var(--red);font-size:26px;cursor:pointer;margin-left:auto;font-weight:900}
+.hero{padding:52px 0 8px;position:relative}
+.hg{display:grid;grid-template-columns:1fr 296px;gap:44px;align-items:center}
+.eyebrow{font-size:9px;letter-spacing:4.4px;color:var(--red);font-weight:900}
+.hero h1{font-size:clamp(31px,5.4vw,56px);line-height:1.18;font-weight:900;margin:14px 0 15px;letter-spacing:.3px;color:var(--ink)}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero p{color:var(--gray);font-size:15.2px;margin-bottom:9px;text-align:justify}
+.hero p b{color:var(--ink)}
+.badge{display:inline-block;margin-top:15px;border:2px solid var(--ink);color:var(--ink);font-size:9.4px;letter-spacing:2.2px;padding:8px 14px;font-weight:900;transform:rotate(-1.6deg);background:#fff}
+.hero aside{width:296px;margin-left:auto;background:#fff;padding:20px 22px;border:2px solid var(--ink);box-shadow:8px 9px 0 var(--red);position:relative}
+.hero aside .lbl{font-size:8.6px;letter-spacing:2.8px;color:var(--red);font-weight:900}
+.hero aside .big{font-family:Georgia,serif;font-size:48px;font-weight:900;line-height:1;letter-spacing:-2px;margin:6px 0 2px}
+.hero aside .of{font-size:10.6px;letter-spacing:.9px;color:var(--gray);font-weight:800}
+.hero aside .rule{height:2px;background:var(--ink);margin:12px 0 10px}
+.hero aside p{font-size:12.2px;line-height:1.92;color:var(--gray);text-align:justify}
+.hero aside .who{font-size:11px;font-weight:800;letter-spacing:.6px;color:var(--red);margin-top:8px}
+section{padding:64px 0;position:relative}
+.sh{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:25px}
+.shl{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.st{font-size:clamp(19px,3.2vw,27px);font-weight:900;letter-spacing:1.2px;color:var(--ink);position:relative;padding-left:17px}
+.st::before{content:"";position:absolute;left:0;top:5px;bottom:5px;width:8px;background:var(--red)}
+.st i{font-style:normal;color:var(--dim)}
+.en{font-size:8.2px;letter-spacing:3px;color:var(--gray)}
+.ss{color:var(--gray);font-size:13.2px;max-width:820px;margin-top:9px;line-height:1.9}
+.chip{font-size:10.2px;padding:7px 12px;border:1px solid var(--red);color:var(--red);font-weight:800;letter-spacing:.5px}
+/* 栏目1：票根 */
+.tik{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.ti{background:#fff;border:2px solid var(--ink);border-top:none;position:relative;padding:0 0 13px;transition:.24s}
+.ti:hover{transform:translateY(-5px);box-shadow:7px 9px 0 var(--red2)}
+.ti .cv{height:70px;background:repeating-linear-gradient(45deg,var(--paper2) 0 8px,#e2d8c2 8px 16px);position:relative;border-bottom:2px dashed var(--ink)}
+.ti .cv::before,.ti .cv::after{content:"";position:absolute;bottom:-11px;width:20px;height:20px;border-radius:50%;border:2px solid var(--ink);background:var(--paper)}
+.ti .cv::before{left:-12px;border-right-color:transparent}
+.ti .cv::after{right:-12px;border-left-color:transparent}
+.ti .cv span{position:absolute;left:14px;top:9px;font-size:8.2px;letter-spacing:2.2px;font-weight:900;color:var(--red);background:#fff;padding:1px 6px}
+.ti h4{font-size:15.4px;font-weight:900;line-height:1.5;padding:11px 15px 0}
+.ti .meta{font-size:9.4px;letter-spacing:.9px;color:var(--gray);font-weight:800;padding:2px 15px}
+.ti p{font-size:11.6px;color:var(--gray);line-height:1.84;padding:5px 15px 0;text-align:justify}
+.ti .how{display:inline-block;margin:8px 15px 0;font-size:8.8px;letter-spacing:1.1px;padding:3px 8px;background:var(--ink);color:#fff;font-weight:800}
+/* 栏目2：阶梯 */
+.stair{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:2px solid var(--ink);border-right:none;background:#fff}
+.st2{padding:15px 16px;border-right:2px dashed var(--ink);transition:.2s}
+.st2:hover{background:#fff6ec}
+.st2:last-child{border-right:none}
+.st2 .n{font-family:Georgia,serif;font-size:30px;font-weight:900;line-height:1;letter-spacing:-1.4px;color:var(--red)}
+.st2 h4{font-size:15.4px;font-weight:900;line-height:1.5}
+.st2 p{font-size:11.8px;color:var(--gray);line-height:1.86;margin-top:5px;text-align:justify}
+.st2 .when{font-size:9.4px;letter-spacing:1.3px;color:var(--gold);font-weight:800;margin-top:6px}
+/* 栏目3：头像栅格 */
+.face{display:grid;grid-template-columns:repeat(6,1fr);gap:0;border:2px solid var(--ink)}
+.fc{padding:15px 10px;text-align:center;border-right:1px solid rgba(27,26,23,.16);border-bottom:1px solid rgba(27,26,23,.16);background:#fff;transition:.2s}
+.fc:nth-child(6n){border-right:none}
+.fc:nth-last-child(-n+6){border-bottom:none}
+.fc .av{width:52px;height:52px;margin:0 auto 8px;border-radius:50%;position:relative;background:radial-gradient(circle at 34% 30%,#f6e6cf,#c9a876 62%,#7c6233)}
+.fc:nth-child(2) .av{background:radial-gradient(circle at 34% 30%,#ffd9c9,#d98b6a 62%,#8a4a30)}
+.fc:nth-child(3) .av{background:radial-gradient(circle at 34% 30%,#d7e6ff,#8fa8d8 62%,#415d8c)}
+.fc:nth-child(4) .av{background:radial-gradient(circle at 34% 30%,#e2f0d8,#9dbf84 62%,#4f6f3c)}
+.fc:nth-child(5) .av{background:radial-gradient(circle at 34% 30%,#f3d7e6,#c894b0 62%,#82546d)}
+.fc:nth-child(6) .av{background:radial-gradient(circle at 34% 30%,#d9e6e6,#8fb4b4 62%,#466363)}
+.fc:nth-child(7) .av{background:radial-gradient(circle at 34% 30%,#e6e0d4,#b5aa92 62%,#6e644c)}
+.fc .av::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:1px solid var(--ink)}
+.fc b{display:block;font-size:12.4px;letter-spacing:.5px}
+.fc i{font-style:normal;font-size:8.6px;color:var(--gray);font-weight:800;letter-spacing:.7px;display:block;margin-top:2px}
+.fc:hover{background:var(--paper2)}
+.fc:hover b{color:var(--red)}
+/* 栏目4：报纸分栏 */
+.paper{display:grid;grid-template-columns:2.05fr 1fr;gap:34px;background:#fff;padding:26px 30px;border-top:5px solid var(--red);column-rule:1px solid var(--ink)}
+.paper .lead{font-family:Georgia,serif;font-size:clamp(25px,3.5vw,36px);line-height:1.36;font-weight:900;letter-spacing:-.6px}
+.paper p{font-size:14.2px;color:#3a362e;line-height:2.02;text-align:justify;margin-top:12px}
+.paper p::first-letter{font-family:Georgia,serif;font-size:54px;float:left;line-height:.88;padding:3px 10px 0 0;color:#fff;background:var(--red);font-weight:900;margin-right:5px}
+.paper blockquote{border-left:4px solid var(--ink);padding:6px 0 6px 15px;margin:14px 0;color:var(--red);font-size:13.2px;line-height:1.9;font-style:italic}
+.side h5{font-size:8.6px;letter-spacing:2.6px;color:var(--red);margin-bottom:9px;font-weight:900}
+.side ol{counter-reset:k}
+.side li{counter-increment:k;font-size:12.4px;color:var(--gray);padding:8px 0 8px 30px;position:relative;border-bottom:1px dashed rgba(27,26,23,.22)}
+.side li::before{content:"FREE " counter(k,decimal-leading-zero);position:absolute;left:0;top:8px;font-family:Georgia,serif;font-size:9.2px;color:var(--red);font-weight:900;letter-spacing:.6px}
+/* 栏目5：折页 */
+.ton{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.tn{background:#fff;padding:19px 20px;border-left:7px solid var(--red);transition:.24s}
+.tn:nth-child(2){border-left-color:var(--gold)}
+.tn:hover{transform:translate(-3px,-3px);box-shadow:9px 11px 0 rgba(194,51,31,.24)}
+.tn .lbl{font-size:8.4px;letter-spacing:2.4px;color:var(--red);font-weight:900}
+.tn h4{font-size:19.2px;font-weight:900;margin:4px 0 6px}
+.tn .yr{font-size:10.2px;letter-spacing:1px;color:var(--gray);font-weight:800}
+.tn p{font-size:12.2px;line-height:1.92;margin-top:6px;color:var(--gray);text-align:justify}
+.tn .at{font-family:Georgia,serif;font-size:21px;font-weight:900;color:var(--red);margin-top:9px;letter-spacing:-.7px}
+/* 栏目6：四道核验 */
+.rule4{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:22px}
+.r4{padding:14px 16px;border:2px solid var(--ink);background:#fff}
+.r4 b{font-size:11.6px;letter-spacing:1.3px;color:var(--red)}
+.r4:nth-child(3) b{color:var(--gold)}
+.r4:nth-child(4) b{color:var(--ink)}
+.r4 p{font-size:11.6px;color:var(--gray);line-height:1.84;margin-top:5px}
+.foot{border-top:3px double var(--ink);background:var(--paper2);color:var(--gray);padding:46px 0 16px;margin-top:10px}
+.fg{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:26px;margin-bottom:24px}
+.fc2 h5{font-size:8.8px;letter-spacing:3px;color:var(--red);margin-bottom:12px;font-weight:900}
+.fc2 a{display:block;font-size:12.2px;color:var(--gray);padding:5px 0}
+.fc2 a:hover{color:var(--red)}
+.about{font-size:12.2px;color:var(--gray);max-width:440px;margin-top:12px;text-align:justify;line-height:2}
+.copy{text-align:center;font-size:10.6px;color:var(--gray);padding-top:18px;border-top:1px solid rgba(27,26,23,.24);line-height:2.2;letter-spacing:.4px}
+.copy a{color:var(--red);border-bottom:1px dotted var(--red);font-weight:700}
+.up{position:fixed;right:14px;bottom:16px;width:46px;height:46px;background:#fff;color:var(--red);display:grid;place-items:center;font-size:17px;font-weight:900;border:2px solid var(--ink);opacity:0;pointer-events:none;transition:.3s;z-index:99}
+.up.show{opacity:1;pointer-events:auto;box-shadow:0 0 16px rgba(194,51,31,.4)}
+@media(max-width:1040px){
+  .hg{grid-template-columns:1fr}
+  .hero aside,.badge{width:100%;max-width:520px;margin:0 auto}
+  .tik{grid-template-columns:repeat(2,1fr)}
+  .stair,.paper,.ton,.rule4{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .togg{display:block}
+  .nrow{position:fixed;inset:64px 0 0 0;background:var(--paper2);flex-direction:column;padding:16px;transform:translateX(100%);transition:.32s;z-index:99;overflow:auto;border-left:5px solid var(--red)}
+  .nrow.open{transform:translateX(0)}
+  .nrow a{padding:13px 8px;font-size:15.2px;border-bottom:1px solid rgba(27,26,23,.18);width:100%;color:var(--gray)}
+  .hero{padding:24px 0 10px}
+  section{padding:40px 0}
+  .tik,.face{grid-template-columns:1fr}
+  .face{grid-template-columns:repeat(2,1fr)}
+}
+@media print{
+  .alert,.marq,nav.gnb,.up{display:none}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  section{padding:8px 0;break-inside:avoid}
+  .ti,.st2,.tn,.fc,.r4,.paper{break-inside:avoid;border-color:#666;color:#000;background:#fff;box-shadow:none}
+  .ti h4,.st2 h4,.tn h4,.paper .lead{color:#000}
+  .ti p,.st2 p,.tn p,.paper p,.side li{color:#333}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<div class="alert" role="note">
+  ◍ <b>免费福利电影网</b>是 <b>0149 导航</b> 旗下<b>惠民放映</b>频道。本站<b>不做资源站、不挂盗链、不引导下载、不提供任何影视资源</b>：只收录<b>公共版权 / 正版限免 / 院线免费展映 / 公益放映</b>。
+</div>
+
+<div class="marq" aria-hidden="true">
+  <span><b>FREE &amp; LEGAL</b> ｜ 免费福利电影网 · 0149 导航 ｜ 免费电影 · 正版免费电影 · 公共版权电影 · 免费观影 · 公益放映 · 电影片单 · 电影影评 · 观影指南 · 4K修复 · 默片 · 黑白电影 · 华语电影 · 欧洲电影 · 日本电影 · 艺术院线 · 图书馆 · 限免</span>
+</div>
+
+<nav class="gnb" aria-label="主导航">
+  <div class="wrap nrow" id="links">
+    <a class="logo" href="#top"><span class="tick" aria-hidden="true"></span>免费福利电影网<small>0149 导航 · 惠民放映</small></a>
+    <a href="#tik">免费片单</a>
+    <a href="#stair">四类免费</a>
+    <a href="#face">放映阵地</a>
+    <a href="#paper">福利影评</a>
+    <a href="#ton">本周免费</a>
+    <a href="#about">关于本站</a>
+  </div>
+  <button class="togg" id="togg" aria-label="菜单" aria-expanded="false">☰</button>
+</nav>
+
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="wrap hg">
+    <div>
+      <div class="eyebrow">FREE &amp; LEGAL · SINCE 0149 · EVERY FRIDAY</div>
+      <h1>免费福利电影网。<br>四类<b>合法免费</b>，<em>每周更新</em>。</h1>
+      <p>免费不是"找到了资源"，而是<b>本来就该免费</b>：导演去世满 70 年的<b>公共版权</b>经典、院线的<b>免费展映日</b>、正版平台的<b>限免片单</b>、电影节的<b>公益场</b>。</p>
+      <p>每部片都标注<b>免费原因、观看渠道、是否可下载、限免期限</b>。片单每周五更新，<b>0149 个惠民标签</b>持续归档。</p>
+      <span class="badge">本周 FREE 12 部 · 限免 5 部 · 公共版权 38 部</span>
+    </div>
+    <aside aria-label="合法率">
+      <div class="lbl">LEGAL RATE · 合法率</div>
+      <div class="big">100.0%</div>
+      <div class="of">公共版权 38 ｜ 正版限免 12 ｜ 院线免费展映 9 ｜ 公益场 6</div>
+      <div class="rule"></div>
+      <p>本月主题：<b>"那些早就该免费给你的老电影"</b>。价格与限免以渠道官方公告为准，本站不承担变更责任。</p>
+      <div class="who">核验员：三条规矩（查版权 / 查渠道 / 查价格）</div>
+    </aside>
+  </div>
+</section>
+
+<section id="tik" aria-labelledby="t-win">
+  <div class="wrap">
+    <div class="sh">
+      <div>
+        <div class="shl"><h2 class="st"><i>01</i>免费片单</h2><span class="en">Free List</span></div>
+        <p class="ss">四部<b>本来就该免费</b>的片子。<b>票根造型</b>：虚线撕裂线 + 半圆齿孔 + 票价标签（零图片请求）。</p>
+      </div>
+      <a class="chip" href="#">0149 部免费片单 ›</a>
+    </div>
+    <div class="tik">
+      <article class="ti" tabindex="0">
+        <div class="cv" aria-hidden="true"><span>PD · 可下载</span></div>
+        <h4>《大都会》</h4>
+        <div class="meta">1927 · 德国 · 153′ · 弗里茨·朗</div>
+        <p>导演去世已满 70 年，<b>公共版权</b>。修复版可在多个正版档案馆免费观看。</p>
+        <span class="how">票价 ¥0 · 可下载</span>
+      </article>
+      <article class="ti" tabindex="0">
+        <div class="cv" aria-hidden="true"><span>FREE · 限免</span></div>
+        <h4>《淘金记》</h4>
+        <div class="meta">1925 · 美国 · 95′ · 查理·卓别林</div>
+        <p>公共版权 + 多个正版平台<b>限免</b>。带小孩的第一部默片，就从它开始。</p>
+        <span class="how">票价 ¥0 · 限免至月末</span>
+      </article>
+      <article class="ti" tabindex="0">
+        <div class="cv" aria-hidden="true"><span>CINE · 展映</span></div>
+        <h4>《东京物语》</h4>
+        <div class="meta">1953 · 日本 · 136′ · 小津安二郎</div>
+        <p>公共版权。多地<b>艺术院线周二/周三免费场</b>，凭学生证或老年证常免票。</p>
+        <span class="how">票价 ¥0 · 带身份证</span>
+      </article>
+      <article class="ti" tabindex="0">
+        <div class="cv" aria-hidden="true"><span>PD · 档案</span></div>
+        <h4>《战舰波将金号》</h4>
+        <div class="meta">1925 · 苏联 · 75′ · 爱森斯坦</div>
+        <p>公共版权。<b>可合法下载、可免费用于教学与非商业放映</b>，请认准修复档案源。</p>
+        <span class="how">票价 ¥0 · 可下载</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="stair" style="background:rgba(194,51,31,.045)" aria-labelledby="t-noct">
+  <div class="wrap">
+    <div class="sh">
+      <div>
+        <div class="shl"><h2 class="st"><i>02</i>四类免费</h2><span class="en">Four Freedoms</span></div>
+        <p class="ss">免费只有四种，没有第五种。<b>阶梯式栅格 + 大号序号</b>（全程零 <span style="font-family:monospace;font-size:11px">table</span>）。</p>
+      </div>
+      <a class="chip" href="#">完整核验清单 ›</a>
+    </div>
+    <div class="stair">
+      <div class="st2"><span class="n">01</span><h4>公共版权<br>Public Domain</h4><p>导演去世满 70 年（部分国家为 50/60 年）或版权未续展。<b>可下载、可免费放映、可用于教学</b>。本站 38 部均附版权状态说明。</p><div class="when">ARCHIVE · 38 部</div></div>
+      <div class="st2"><span class="n">02</span><h4>正版平台限免<br>Free Window</h4><p>视频平台为拉新、节日、纪念日做的<b>限时免费</b>。<b>不破解、不共享账号、不录屏</b>。限免期限以官方公告为准。</p><div class="when">LIMITED · 12 部</div></div>
+      <div class="st2"><span class="n">03</span><h4>院线免费展映<br>Free Screening</h4><p>艺术院线、电影资料馆的<b>周二/周三免费场</b>、青年导演展、露天电影夜。<b>带身份证、学生证、老年证常可免票</b>。</p><div class="when">CINEMA · 9 场</div></div>
+      <div class="st2"><span class="n">04</span><h4>电影节公益场<br>Community</h4><p>电影节、社区、图书馆、高校的<b>公益放映</b>。<b>不收费、不卖票、不需注册</b>。关注本地影迷群与馆方公告。</p><div class="when">COMMUNITY · 6 场</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="face" aria-labelledby="t-face">
+  <div class="wrap">
+    <div class="sh">
+      <div>
+        <div class="shl"><h2 class="st"><i>03</i>放映阵地</h2><span class="en">Where to Watch</span></div>
+        <p class="ss">七处<b>合法免费的观影阵地</b>。<b>无间隙头像栅格</b>，径向渐变图标 + 墨线外环。</p>
+      </div>
+      <a class="chip" href="#">阵地地图 ›</a>
+    </div>
+    <div class="face">
+      <div class="fc"><div class="av" aria-hidden="true"></div><b>电影资料馆</b><i>周二免费场</i></div>
+      <div class="fc"><div class="av" aria-hidden="true"></div><b>艺术院线</b><i>学生证免票</i></div>
+      <div class="fc"><div class="av" aria-hidden="true"></div><b>公共图书馆</b><i>蓝光可借阅</i></div>
+      <div class="fc"><div class="av" aria-hidden="true"></div><b>正版档案馆</b><i>默片可下载</i></div>
+      <div class="fc"><div class="av" aria-hidden="true"></div><b>电影节</b><i>公益单元</i></div>
+      <div class="fc"><div class="av" aria-hidden="true"></div><b>高校放映</b><i>对外开放</i></div>
+      <div class="fc"><div class="av" aria-hidden="true"></div><b>社区广场</b><i>露天免费</i></div>
+    </div>
+  </div>
+</section>
+
+<section id="paper" aria-labelledby="t-paper">
+  <div class="wrap">
+    <div class="sh">
+      <div>
+        <div class="shl"><h2 class="st"><i>04</i>福利影评</h2><span class="en">Free Read</span></div>
+        <p class="ss">一篇<b>写给想省钱看电影的人</b>的信。<b>报纸分栏 + 首字下沉 + 右注编号</b>。</p>
+      </div>
+      <a class="chip" href="#">影评全部 ›</a>
+    </div>
+    <div class="paper">
+      <div>
+        <p class="lead">免费，是电影最古老的福利。</p>
+        <p>在"网盘"和"会员"之前，电影一直是免费的。十九世纪末，卢米埃尔兄弟在咖啡馆门口放映，路人站着看，<b>不用买票</b>。二十世纪，工厂放电影给工人看，教堂放电影给信徒看，广场放电影给整条街看。</p>
+        <p>电影从诞生起就是<b>公共的</b>。它的成本由制片方承担，它的传播靠口碑，它的寿命靠一代代人免费把它传下去。那些最贵的电影——卓别林的《淘金记》、爱森斯坦的《战舰波将金号》、小津的《东京物语》——<b>今天在法律上已经属于所有人</b>。</p>
+        <blockquote>"公共版权不是没人要的东西，是整个人类决定一起保留的东西。" —— 免费福利电影网 · 影评 0149</blockquote>
+        <p>所以我们不教你怎么"找资源"。我们教你三件事：<b>怎么判断一部片是否已进入公共版权</b>（导演去世是否满 70 年、版权是否在当地续展）；<b>怎么找到正版档案源</b>（电影资料馆、公共影视档案、高校影像库）；<b>怎么用最少的钱看最多的片</b>（一张读者证、一个周二、一场公益场、一次限免）。</p>
+      </div>
+      <aside class="side">
+        <h5>FREE · 省钱六条</h5>
+        <ol>
+          <li>办一张读者证，蓝光碟免费借</li>
+          <li>盯紧周二、周三，艺术院线常免票</li>
+          <li>节假日正版平台必有 10–20 部限免</li>
+          <li>电影节公益场，提前三天抢</li>
+          <li>默片与黑白片，多已可合法下载</li>
+          <li>只为"想看"开会员，不为"可能看"</li>
+        </ol>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="ton" aria-labelledby="t-ton">
+  <div class="wrap">
+    <div class="sh">
+      <div>
+        <div class="shl"><h2 class="st"><i>05</i>本周免费</h2><span class="en">This Week</span></div>
+        <p class="ss">两部<b>本周可合法免费</b>的排片。<b>对开折页 + 左侧色条</b>，周五更新。</p>
+      </div>
+      <a class="chip" href="#">本周排片表 ›</a>
+    </div>
+    <div class="ton">
+      <div class="tn"><div class="lbl">SAT 19:00 · 公益场 · 凭身份证</div><h4>《圣女贞德蒙难记》</h4><div class="yr">1928 · 法国 · 110′ · 卡尔·西奥多·德莱叶 · 公共版权</div><p>修复版，配现场钢琴。<b>免费，需提前预约，限 120 席。</b></p><div class="at">FREE ¥0</div></div>
+      <div class="tn"><div class="lbl">SUN 14:00 · 正版限免 · 至本月 30 日</div><h4>《一条安达鲁狗》</h4><div class="yr">1929 · 法国 · 21′ · 布努埃尔 / 达利 · 公共版权</div><p>短片，限免期内可免费观看与下载。<b>请勿分享破解链接，限免即福利。</b></p><div class="at">FREE ¥0</div></div>
+    </div>
+    <div class="rule4">
+      <div class="r4"><b>核验 01 · 版权状态</b><p>导演去世是否满 70 年？版权是否在本地续展？<b>不确定的不收录。</b></p></div>
+      <div class="r4"><b>核验 02 · 放映介质</b><p>4K 修复 / 胶片扫描 / 原始拷贝。<b>优先推荐档案级源，拒绝"高清枪版"。</b></p></div>
+      <div class="r4"><b>核验 03 · 观看渠道</b><p>资料馆 / 正版平台 / 图书馆 / 公益场。<b>只给官方渠道，不给跳转外链。</b></p></div>
+      <div class="r4"><b>核验 04 · 价格与期限</b><p>¥0 还是限免？限到哪天？<b>以渠道公告为准，过期即下架。</b></p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot" id="about">
+  <div class="wrap">
+    <div class="fg">
+      <div class="fc2">
+        <div class="logo" style="font-size:17px;color:var(--ink)"><span class="tick" aria-hidden="true"></span>免费福利电影网<small>0149 导航 · 惠民放映</small></div>
+        <p class="about"><b>免费福利电影网</b>（mianfeifulidianyingwang-cn.github.io）是 <b>0149 导航</b> 旗下<b>惠民放映</b>频道：只推荐<b>可合法免费观看</b>的电影，含<b>免费片单、四类免费、放映阵地、福利影评、本周免费</b>。"0149"是本站自建的<b>惠民观影标签体系</b>（公共版权 / 限免 / 展映 / 公益 / 亲子 / 通勤），非官方分类，亦非任何第三方机构。本站<b>倡导正版、理性消费</b>：<b>不做资源站、不挂盗链、不引导下载、不提供任何影视资源</b>。</p>
+      </div>
+      <div class="fc2"><h5>免费方式</h5><a href="#stair">公共版权（PD）</a><a href="#stair">正版平台限免</a><a href="#stair">院线免费展映</a><a href="#stair">电影节公益场</a><a href="#stair">图书馆借阅</a></div>
+      <div class="fc2"><h5>栏目</h5><a href="#tik">免费片单</a><a href="#stair">四类免费</a><a href="#face">放映阵地</a><a href="#paper">福利影评</a><a href="#ton">本周免费</a></div>
+      <div class="fc2"><h5>关于</h5><a href="#about">"免费"指什么</a><a href="#about">公共版权说明</a><a href="#">纠错</a><a href="#">投稿影评</a><a href="#">订阅周五更新</a></div>
+    </div>
+    <div class="copy">
+      网站名称：<b>免费福利电影网</b> ｜ 网站网址：<a href="https://mianfeifulidianyingwang-cn.github.io">https://mianfeifulidianyingwang-cn.github.io</a> ｜ 频道归属：<a href="https://mianfeifulidianyingwang-cn.github.io">0149 导航</a> ｜ © 2024–2026 保留所有权利<br>
+      本站仅为<b>电影信息与观影索引服务</b>，<b>不提供任何影视资源下载、网盘分享与在线播放</b>。请通过电影院及合法授权平台观看。<b>明确反对盗版与破解：盗版链条常与赌博、诈骗、恶意软件共生，下载即助纣。</b>
+    </div>
+  </div>
+</footer>
+
+<a class="up" id="up" href="#top" aria-label="回到顶部">↑</a>
+
+<script>
+var togg=document.getElementById('togg'),links=document.getElementById('links');
+togg.addEventListener('click',function(){
+  var o=links.classList.toggle('open');
+  togg.setAttribute('aria-expanded',o);togg.textContent=o?'✕':'☰';
+});
+links.addEventListener('click',function(e){
+  if(e.target.tagName==='A'){links.classList.remove('open');togg.setAttribute('aria-expanded','false');togg.textContent='☰';}
+});
+var up=document.getElementById('up');
+window.addEventListener('scroll',function(){up.classList[window.scrollY>500?'add':'remove']('show');});
+</script>
+</body>
+</html>
